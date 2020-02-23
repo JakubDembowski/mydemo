@@ -1,0 +1,44 @@
+@import 'layout';
+
+$font: 'Merriweather', serif;
+$bcolor: bisque;
+$fontcolor: rgb(3, 11, 150);
+$mybuttcolor: #2073c2;
+@mixin bradius5{
+    border-radius: .5em;
+    border: 1px solid rgb(126, 126, blue)
+
+}
+.stretch {
+    display: grid;
+    justify-self: stretch;
+}
+
+
+body{
+    background-color: $bcolor;
+    font-family: $font;    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.mybutton {
+    display: block;
+    width: 6em;
+    font-size: 1.2em;
+    color: #ff8;
+    background: $mybuttcolor;
+    text-decoration: none;
+    font-style: oblique;
+    text-align: center;
+    padding: .2em .5em;
+    margin: .5em 0;
+    @include bradius5;
+}
+.card{
+    background-color: green($color: red);
+    border-radius: .4em;
+    padding: 1em;
+}
